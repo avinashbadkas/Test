@@ -1,0 +1,21 @@
+package Test1.e;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest extends TestCase {
+	
+
+	@org.testng.annotations.Test
+	public void test1() {
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://mvnrepository.com/artifact/org.testng/testng/7.6.1");
+	}
+}
